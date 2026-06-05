@@ -1,0 +1,96 @@
+{
+  "common": {
+    "loading": "Ielādē...",
+    "error": "Radās kļūda",
+    "noData": "Nav pieejamu datu"
+  },
+
+  "sidebar": {
+    "dashboard": "Pārskats",
+    "projects": "Projekti",
+    "documents": "Dokumenti",
+    "externalShare": "Ārējā kopīgošana",
+    "hse": "HSE",
+    "logistics": "Loģistika",
+    "photos": "Fotogrāfijas",
+    "reports": "Atskaites",
+    "users": "Lietotāji",
+    "roles": "Lomas un atļaujas",
+    "settings": "Iestatījumi"
+  },
+
+  "topbar": {
+    "settings": "Iestatījumi",
+    "logout": "Izrakstīties"
+  },
+
+  "breadcrumbs": {
+    "projects": "Projekti",
+    "documents": "Dokumenti",
+    "logistics": "Loģistika",
+    "photos": "Fotogrāfijas",
+    "reports": "Atskaites",
+    "hse": "HSE",
+    "users": "Lietotāji",
+    "roles": "Lomas",
+    "settings": "Iestatījumi"
+  },
+
+  "buttons": {
+    "new": "Jauns",
+    "create": "Izveidot",
+    "save": "Saglabāt",
+    "cancel": "Atcelt",
+    "delete": "Dzēst",
+    "edit": "Rediģēt",
+    "upload": "Augšupielādēt",
+    "back": "Atpakaļ"
+  },
+
+  "status": {
+    "ongoing": "Notiek",
+    "completed": "Pabeigts",
+    "pending": "Gaida"
+  },
+
+  "projects": {
+    "title": "Projekti",
+    "description": "Pārvaldi aktīvos un pabeigtos projektus",
+    "list": "Projektu saraksts",
+    "newProject": "Jauns projekts",
+    "name": "Projekta nosaukums",
+    "status": "Statuss",
+    "responsible": "Atbildīgais"
+  },
+
+  "documents": {
+    "title": "Dokumenti",
+    "description": "Pārvaldi un organizē projekta dokumentus"
+  },
+
+  "logistics": {
+    "title": "Loģistika",
+    "description": "Pārvaldi materiālus, aprīkojumu un būvlaukuma loģistiku"
+  },
+
+  "photos": {
+    "title": "Fotogrāfijas",
+    "description": "Augšupielādē un pārvaldi projekta fotogrāfijas"
+  },
+
+  "reports": {
+    "title": "Atskaites",
+    "description": "Izveido un apskati projekta atskaites"
+  },
+
+  "hse": {
+    "title": "HSE",
+    "description": "Pārvaldi auditus, kontrolsarakstus un drošību"
+  },
+
+  "admin": {
+    "users": "Lietotāju pārvaldība",
+    "roles": "Lomas un atļaujas",
+    "settings": "Sistēmas iestatījumi"
+  }
+}

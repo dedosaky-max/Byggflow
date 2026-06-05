@@ -1,0 +1,96 @@
+{
+  "common": {
+    "loading": "Caricamento...",
+    "error": "Si è verificato un errore",
+    "noData": "Nessun dato disponibile"
+  },
+
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "projects": "Progetti",
+    "documents": "Documenti",
+    "externalShare": "Condivisione esterna",
+    "hse": "HSE",
+    "logistics": "Logistica",
+    "photos": "Foto",
+    "reports": "Report",
+    "users": "Utenti",
+    "roles": "Ruoli e permessi",
+    "settings": "Impostazioni"
+  },
+
+  "topbar": {
+    "settings": "Impostazioni",
+    "logout": "Esci"
+  },
+
+  "breadcrumbs": {
+    "projects": "Progetti",
+    "documents": "Documenti",
+    "logistics": "Logistica",
+    "photos": "Foto",
+    "reports": "Report",
+    "hse": "HSE",
+    "users": "Utenti",
+    "roles": "Ruoli",
+    "settings": "Impostazioni"
+  },
+
+  "buttons": {
+    "new": "Nuovo",
+    "create": "Crea",
+    "save": "Salva",
+    "cancel": "Annulla",
+    "delete": "Elimina",
+    "edit": "Modifica",
+    "upload": "Carica",
+    "back": "Indietro"
+  },
+
+  "status": {
+    "ongoing": "In corso",
+    "completed": "Completato",
+    "pending": "In attesa"
+  },
+
+  "projects": {
+    "title": "Progetti",
+    "description": "Gestisci tutti i progetti attivi e completati",
+    "list": "Lista progetti",
+    "newProject": "Nuovo progetto",
+    "name": "Nome progetto",
+    "status": "Stato",
+    "responsible": "Responsabile"
+  },
+
+  "documents": {
+    "title": "Documenti",
+    "description": "Gestisci e organizza tutti i documenti del progetto"
+  },
+
+  "logistics": {
+    "title": "Logistica",
+    "description": "Gestisci materiali, attrezzature e logistica di cantiere"
+  },
+
+  "photos": {
+    "title": "Foto",
+    "description": "Carica e gestisci le foto del progetto"
+  },
+
+  "reports": {
+    "title": "Report",
+    "description": "Genera e visualizza i report del progetto"
+  },
+
+  "hse": {
+    "title": "HSE",
+    "description": "Gestisci audit, checklist e sicurezza"
+  },
+
+  "admin": {
+    "users": "Gestione utenti",
+    "roles": "Ruoli e permessi",
+    "settings": "Impostazioni sistema"
+  }
+}

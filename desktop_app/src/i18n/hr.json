@@ -1,0 +1,96 @@
+{
+  "common": {
+    "loading": "Učitavanje...",
+    "error": "Došlo je do pogreške",
+    "noData": "Nema dostupnih podataka"
+  },
+
+  "sidebar": {
+    "dashboard": "Nadzorna ploča",
+    "projects": "Projekti",
+    "documents": "Dokumenti",
+    "externalShare": "Vanjsko dijeljenje",
+    "hse": "HSE",
+    "logistics": "Logistika",
+    "photos": "Fotografije",
+    "reports": "Izvještaji",
+    "users": "Korisnici",
+    "roles": "Uloge i dozvole",
+    "settings": "Postavke"
+  },
+
+  "topbar": {
+    "settings": "Postavke",
+    "logout": "Odjava"
+  },
+
+  "breadcrumbs": {
+    "projects": "Projekti",
+    "documents": "Dokumenti",
+    "logistics": "Logistika",
+    "photos": "Fotografije",
+    "reports": "Izvještaji",
+    "hse": "HSE",
+    "users": "Korisnici",
+    "roles": "Uloge",
+    "settings": "Postavke"
+  },
+
+  "buttons": {
+    "new": "Novi",
+    "create": "Kreiraj",
+    "save": "Spremi",
+    "cancel": "Odustani",
+    "delete": "Obriši",
+    "edit": "Uredi",
+    "upload": "Učitaj",
+    "back": "Natrag"
+  },
+
+  "status": {
+    "ongoing": "U tijeku",
+    "completed": "Završeno",
+    "pending": "Na čekanju"
+  },
+
+  "projects": {
+    "title": "Projekti",
+    "description": "Upravljaj aktivnim i završenim projektima",
+    "list": "Popis projekata",
+    "newProject": "Novi projekt",
+    "name": "Naziv projekta",
+    "status": "Status",
+    "responsible": "Odgovorna osoba"
+  },
+
+  "documents": {
+    "title": "Dokumenti",
+    "description": "Upravljaj i organiziraj dokumente projekta"
+  },
+
+  "logistics": {
+    "title": "Logistika",
+    "description": "Upravljaj materijalom, opremom i logistikom gradilišta"
+  },
+
+  "photos": {
+    "title": "Fotografije",
+    "description": "Učitaj i upravljaj fotografijama projekta"
+  },
+
+  "reports": {
+    "title": "Izvještaji",
+    "description": "Generiraj i pregledaj izvještaje projekta"
+  },
+
+  "hse": {
+    "title": "HSE",
+    "description": "Upravljaj auditima, kontrolnim listama i sigurnošću"
+  },
+
+  "admin": {
+    "users": "Upravljanje korisnicima",
+    "roles": "Uloge i dozvole",
+    "settings": "Postavke sustava"
+  }
+}

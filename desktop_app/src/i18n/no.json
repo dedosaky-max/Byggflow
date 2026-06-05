@@ -1,0 +1,96 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "noData": "No data available"
+  },
+
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "projects": "Projects",
+    "documents": "Documents",
+    "externalShare": "External Sharing",
+    "hse": "HSE",
+    "logistics": "Logistics",
+    "photos": "Photos",
+    "reports": "Reports",
+    "users": "Users",
+    "roles": "Roles & Permissions",
+    "settings": "Settings"
+  },
+
+  "topbar": {
+    "settings": "Settings",
+    "logout": "Logout"
+  },
+
+  "breadcrumbs": {
+    "projects": "Projects",
+    "documents": "Documents",
+    "logistics": "Logistics",
+    "photos": "Photos",
+    "reports": "Reports",
+    "hse": "HSE",
+    "users": "Users",
+    "roles": "Roles",
+    "settings": "Settings"
+  },
+
+  "buttons": {
+    "new": "New",
+    "create": "Create",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "upload": "Upload",
+    "back": "Back"
+  },
+
+  "status": {
+    "ongoing": "Ongoing",
+    "completed": "Completed",
+    "pending": "Pending"
+  },
+
+  "projects": {
+    "title": "Projects",
+    "description": "Manage all active and completed projects",
+    "list": "Project list",
+    "newProject": "New project",
+    "name": "Project name",
+    "status": "Status",
+    "responsible": "Responsible"
+  },
+
+  "documents": {
+    "title": "Documents",
+    "description": "Manage and organize all project documents"
+  },
+
+  "logistics": {
+    "title": "Logistics",
+    "description": "Manage materials, equipment and site logistics"
+  },
+
+  "photos": {
+    "title": "Photos",
+    "description": "Upload and manage project photos"
+  },
+
+  "reports": {
+    "title": "Reports",
+    "description": "Generate and view project reports"
+  },
+
+  "hse": {
+    "title": "HSE",
+    "description": "Manage audits, checklists and safety"
+  },
+
+  "admin": {
+    "users": "User management",
+    "roles": "Roles & permissions",
+    "settings": "System settings"
+  }
+}

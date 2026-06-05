@@ -1,0 +1,34 @@
+{
+  "name": "byggflow-desktop",
+  "version": "1.0.0",
+  "description": "Byggflow Desktop App - Electron + React + Vite",
+  "main": "electron.js",
+  "type": "commonjs",
+  "author": "Mendes",
+  "license": "MIT",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:vite\" \"npm run dev:electron\"",
+    "dev:vite": "vite",
+    "dev:electron": "cross-env NODE_ENV=development electron .",
+    "build": "vite build",
+    "start": "electron ."
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.105.4",
+    "connect-history-api-fallback": "^2.0.0",
+    "i18next": "^26.1.0",
+    "i18next-browser-languagedetector": "^8.2.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-i18next": "^17.0.7",
+    "react-router-dom": "^6.23.1",
+    "zustand": "^5.0.13"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "electron": "^30.0.0",
+    "vite": "^5.2.0"
+  }
+}

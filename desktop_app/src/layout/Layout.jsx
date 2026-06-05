@@ -1,0 +1,21 @@
+// src/layout/Layout.jsx
+import React from "react";
+import { Outlet } from "react-router-dom";
+import Sidebar from "./Sidebar";
+import Topbar from "./Topbar";
+import "./layout.css";
+
+export default function Layout() {
+  return (
+    <div className="layout">
+      <Sidebar />
+
+      <div className="layout-main">
+        <Topbar />
+        <div className="layout-content">
+          <Outlet />
+        </div>
+      </div>
+    </div>
+  );
+}
