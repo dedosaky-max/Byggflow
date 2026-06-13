@@ -1,0 +1,193 @@
+# 🏗️ Byggflow — Backend
+
+Byggflow è una piattaforma enterprise per la gestione operativa dei cantieri, con un backend modulare basato su **FastAPI**, **Supabase**, **PostgreSQL** e un’architettura completamente scalabile.
+
+Questo repository contiene **tutti i moduli backend**, organizzati in modo coerente e indipendente, con repository, service, router e schema per ciascun dominio funzionale.
+
+---
+
+## 🚀 Tecnologie principali
+
+- **Python 3.11+**
+- **FastAPI**
+- **Supabase (PostgreSQL + Auth + Storage)**
+- **Pydantic v2**
+- **Uvicorn**
+- **JWT Supabase**
+- **Modular Architecture (Repository → Service → Router)**
+
+---
+
+## 📂 Struttura del progetto
+
+backend/
+│
+├── app/
+│   ├── core/               # Configurazioni, sicurezza, logging, eccezioni
+│   ├── config/             # Connessione Supabase
+│   ├── modules/            # Tutti i moduli funzionali
+│   │   ├── projects/
+│   │   ├── personnel/
+│   │   ├── logistics/
+│   │   ├── warehouse/
+│   │   ├── equipment/
+│   │   ├── fleet/
+│   │   ├── hse/
+│   │   ├── sds/
+│   │   ├── sja/
+│   │   ├── deviations/
+│   │   ├── documents/
+│   │   ├── external_sharing/
+│   │   └── ...
+│   ├── main.py             # Entry point FastAPI
+│   └── ...
+│
+└── requirements.txt  
+
+
+---
+
+## 🧩 Architettura dei moduli
+
+Ogni modulo segue lo stesso pattern:
+module/
+├── schemas.py      # Pydantic models
+├── repository.py   # Accesso a Supabase
+├── service.py      # Business logic
+└── router.py       # Endpoint FastAPI
+
+
+Questo garantisce:
+
+- separazione chiara delle responsabilità  
+- testabilità  
+- scalabilità  
+- coerenza tra moduli  
+
+---
+
+# 📦 Moduli principali
+
+## **1. Projects**
+Gestione dei progetti, torri, ruoli e membri.
+
+## **2. Personnel**
+Gestione del personale, ruoli, assegnazioni.
+
+## **3. Logistics**
+Movimentazione materiali, trasporti, consegne.
+
+## **4. Warehouse**
+Magazzino, stock, movimenti, inventario.
+
+## **5. Equipment**
+Attrezzature, manutenzione, assegnazioni.
+
+## **6. Fleet**
+Veicoli, manutenzione, tracking.
+
+## **7. HSE**
+Eventi sicurezza, incidenti, near-miss.
+
+## **8. SDS**
+Schede di sicurezza materiali.
+
+## **9. SJA**
+Job Safety Analysis.
+
+## **10. Deviations**
+Deviazioni operative, non conformità.
+
+## **11. Documents**
+Document Management System (DMS):
+- cartelle
+- documenti
+- versioning
+
+## **12. External Sharing**
+Condivisione esterna dei documenti:
+- shared_folders
+- share_links
+- access_logs
+
+---
+
+# 🗄️ Database (Supabase)
+
+Byggflow utilizza Supabase come backend:
+
+- **PostgreSQL**
+- **Auth**
+- **Storage**
+- **Row Level Security**
+- **Policies per progetto**
+
+Ogni tabella segue convenzioni precise:
+
+- `id` → `uuid` o `bigserial`
+- `project_id` → FK verso `projects`
+- `created_by` / `created_by_user_id`
+- `created_at`, `updated_at`
+- `on delete cascade` dove necessario
+
+---
+
+# 🔐 Sicurezza
+
+- Autenticazione tramite **JWT Supabase**
+- Ogni endpoint richiede `get_current_user`
+- Accesso ai dati filtrato per `project_id`
+- RLS attivo su tutte le tabelle critiche
+- Token di condivisione generati con `secrets.token_urlsafe`
+
+---
+
+# 🧪 Testing
+
+La struttura modulare permette test unitari su:
+
+- repository (mock Supabase)
+- service (business logic)
+- router (FastAPI TestClient)
+
+---
+
+# ▶️ Avvio del server
+
+uvicorn app.main:app --reload
+
+
+---
+
+# 📄 Documentazione API
+
+FastAPI genera automaticamente la documentazione:
+
+- Swagger UI → `/docs`
+- ReDoc → `/redoc`
+
+---
+
+# 🧱 Standard di sviluppo
+
+- Tutti i moduli devono seguire la struttura repository → service → router
+- Nessuna logica nel router
+- Nessuna query diretta nel service
+- Nessun accesso a Supabase fuori dal repository
+- Naming inglese
+- UUID ovunque possibile
+- Pydantic v2 (`from_attributes = True`)
+
+---
+
+# 👥 Team & Contributi
+
+Byggflow è progettato per essere estensibile.  
+Ogni nuovo modulo deve seguire gli standard definiti in questo README.
+
+---
+
+# 📬 Supporto
+
+Per domande tecniche o nuove funzionalità, contattare il maintainer del backend.
+
